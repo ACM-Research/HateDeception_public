@@ -1,27 +1,34 @@
-# build night 3 – 2022-02-21
+# build night 3 
 
-## agenda
+## objectives
 
-- homework recap
-	- How long did it take?
-	- Is there anything you're confused about?
-- Some team members can keep hunting for the Mate1 dataset.
-	- Maybe someone from RaidForums posted it somewhere else, or there's a torrent link floating around.
-	- We could easily acquire this dataset by paying for credits on RaidForums, but that would make our research unethical.
-- Other team members can experiment with the GPT-3 API.
-	- Try fine-tuning a model on [this dataset](https://www.kaggle.com/rusiano/euroleague-alltime-players) consisting of information about Euroleague players.
-		- This doesn't have to produce any accurate results, we just want to try out the API on a similar dataset.
-		- Since accuracy doesn't matter, please use the cheapest model (Ada).
-- If this division of work still feels cramped, someone can start trying to implement a model from a previous research paper.
-	- whoever most wants to get their hands dirty with machine learning
-	- These are papers from professional researchers, so don't get too down if they're too complicated for us to replicate.
-	- If you choose to start taking on this task, know that you can always shift positions if you're no longer feeling it.
+- Start training imitation model using dataset
+	- Load data into code
+	- Pick an ideal train/test split
+	- Preprocess data (transform it w/ text vectorization)
+		- TF-IDF
+	- Choose algorithm
+		- Algorithms: Adaboost, Naive Bayes, SVM
+	- Meet with faculty advisor this week
+
 
 ## homework
 
-- No more busywork! 🥳
-- Meet with your teammates at least one time outside of this build night before next week.
-	- Start advancing the project outside my supervision.
-	- But i'll still be interested in what you all find!
-	- I recommend using [Jitsi](https://meet.jit.si/).
-- Waiting to hear back from academic advisor.
+- Train imitation model
+- During development, you will have many questions for the Faculty Advisor, so make sure to write them down for our next meeting.
+	- Schedule next meeting with Faculty Advisor
+		- When2Meet Link: (TBD)
+
+Resources for homework:
+Tutorials for training imitation/victim model
+- First tutorial:
+	- https://www.analyticsvidhya.com/blog/2022/03/fake-news-classification-using-deep-learning/
+- Another tutorial:
+	- https://www.kaggle.com/code/lykin22/fake-news-classification-nlp/notebook
+	- Look on the kaggle website (from the dataset link under code tab) for additional tutorials
+- More tutorials from vidhya
+	- https://www.analyticsvidhya.com/blog/2021/06/build-your-own-fake-news-classifier-with-nlp/
+	- https://www.analyticsvidhya.com/blog/2021/07/detecting-fake-news-with-natural-language-processing/
+
+- [Optional] Research on models trained from this dataset before:
+	- http://www.ijirset.com/upload/2020/june/115_4_Source.PDF
