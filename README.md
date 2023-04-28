@@ -1,4 +1,4 @@
-# DisinfoDeception_public
+# HateDeception_public
 
 Using Adversarial Attacks to Deceive Political Disinformation Models on Twitter
 
