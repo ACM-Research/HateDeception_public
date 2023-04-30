@@ -2,19 +2,17 @@
 
 ![Picture of the finsihed poster](readmeContent/HateDeception.png)
 
----
 
 ## Introduction
 
 Social media platforms like Twitter face the challenge to detect hate speech effectively against mounting malicious tactics. To solve this issue, machine learning models have been developed to detect hate speech; but can they be deceived with another set of machine learning models? Our research consists of two sets of models: attack and defense. Our ”defense” model is a natural language processing (NLP) machine learning model that classifies a string input (such as a tweet) as hate speech or not hate speech, and was trained on a dataset of Twitter posts annotated with those binary labels. The ”attack” models are NLP adversarial learning models which generate posts that aim to evade hate speech detection by deceiving our defense model. With the help of Dr. Yibo Hu, our attack team identified various black-box adversarial learning techniques to modify the tweets in our dataset without changing their original meaning, helping us evaluate the robustness and effectiveness of our defense system in the face of adversarial attacks. Our research aims to first train a defense model with the highest accuracy in detecting hate speech. Then, we attempt to craft an attack model capable of deceiving our defense model with altered inputs that are semantically deceptive (convincing) and 2 accurately deceptive (effective)
 
----
 
 ## Dataset
 
 Choosing a dataset involved evaluating multiple datasets on Kaggle to find one that had the most useful features for training our defense model. We worked with Dr. Yan Zhou and Dr. Latifur Khan to help us chose an appropriate dataset with enough features. One challenge we faced was the subjective nature of our topic, so we had to ensure that the dataset we chose followed Twitter’s user guidelines about what constitutes hate speech and what does not. We were specifically interested in finding a dataset of tweets that were classified only as hate speech or not hate speech, as we were planning to create a binary classification model. We eventually found one based on Twitter guidelines that was labeled for a tertiary classification: hate speech, not hate speech, or offensive language. For our purposes, we cleaned the dataset by removing the ”offensive” label to make it a binary classification model.
 
----
+
 
 ## Defense Model Methodology
 
@@ -31,7 +29,6 @@ the accuracy rate on how well it correctly identified tweets from the testing da
 
 ![A diagram of Defense Methodology](readmeContent/defenseteamdiagramdrawing.png)
 
----
 
 ## Attack Model Methodology
 
@@ -41,7 +38,7 @@ Our attack model had to generate different variations of the tweets in our datas
 
 __Metrics for Analyzing Performance:__ To measure the performance of each model, we __1)__ analyzed the statistical differences of the texts’ semantics between the original, unaltered dataset and the dataset altered by the attack model for similarity, and __2)__ measured how much the altered datasets from each attack decreased the defense model’s original prediction accuracy for effectiveness.
 
----
+
 
 ## Results
 
@@ -65,14 +62,14 @@ The figure above shows how accurate each text attack method was for each defense
 
 ![fig3](readmeContent/results3.jpg)
 
----
+
 
 ## References
 
 [1] Hu, Yibo, et al. ”Controllable Fake Document Infilling for Cyber Deception.” Findings of the Association for Computational Linguistics:
 EMNLP 2022, Association for Computational Linguistics, 2022, pp. 6505–6519, Abu Dhabi, United Arab Emirates.
 
---- 
+ 
 
 ## Contributors
 
