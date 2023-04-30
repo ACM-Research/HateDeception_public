@@ -1,6 +1,6 @@
 # HateDeception: Using Adversarial Learning to Deceive Hate Speech Detection Models for Twitter
 
-![Picture of the finsihed poster](readmeContent\HateDeception.png)
+![Picture of the finsihed poster](readmeContent/HateDeception.png)
 
 ---
 
@@ -29,7 +29,7 @@ network with backpropagation for classification with PyTorch and Keras.
 Metric for Analyzing Performance: To measure each defense model’s performance, we measured
 the accuracy rate on how well it correctly identified tweets from the testing dataset as hate speech.
 
-![A diagram of Defense Methodology](readmeContent\defenseteamdiagramdrawing.png)
+![A diagram of Defense Methodology](readmeContent/defenseteamdiagramdrawing.png)
 
 ---
 
@@ -37,7 +37,7 @@ the accuracy rate on how well it correctly identified tweets from the testing da
 
 Our attack model had to generate different variations of the tweets in our dataset using methods from TextAttack [1]: Easy Data Augmentation (EDA) and Word Embedding using Global Vectors for Word Representation (GloVe). These are black-box adversarial learning techniques that heuristically alter the original dataset by replacing, inserting, or deleting words to fool the model.
 
-![The attack model methodology](readmeContent\textattackdiagram.png)
+![The attack model methodology](readmeContent/textattackdiagram.png)
 
 __Metrics for Analyzing Performance:__ To measure the performance of each model, we __1)__ analyzed the statistical differences of the texts’ semantics between the original, unaltered dataset and the dataset altered by the attack model for similarity, and __2)__ measured how much the altered datasets from each attack decreased the defense model’s original prediction accuracy for effectiveness.
 
@@ -47,7 +47,7 @@ __Metrics for Analyzing Performance:__ To measure the performance of each model,
 
 The accuracy of our linear defense model ended up at 93.47%, 91.07% for the random forest model, and 91.45% for the neural network. For further assessment, we used a confusion matrix to visualize how accurate the defense model’s predictions were. Below, the diagonal (from top left to bottom right) represents the frequency of successful predictions made by the linear model
 
-![A confusion Matrix](readmeContent\confusionmatrix.png)
+![A confusion Matrix](readmeContent/confusionmatrix.png)
 
 - Out of 1,079 tweets labeled as ”hate,” the modelpredicted 943 correctly, but 93 were incorrect as ”not hate.” Similarly, out of 1,046 tweets labeled as ”not hate,” the model predicted 1,003 correctly, but 43 were incorrect as ”hate.”
 - The linear model has a higher accuracy in predicting ”not hate” tweets (96%) compared to ”hate” tweets (90%) but has a higher false negative rate for ”hate” tweets (10%) than for  not hate” tweets (4%). 
